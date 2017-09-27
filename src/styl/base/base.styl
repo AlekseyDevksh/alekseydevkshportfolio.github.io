@@ -1,0 +1,49 @@
+*, *:after, *::before {
+    box-sizing: border-box;
+}
+
+html, body
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+
+body
+    color: #345;
+    background: #2E363A;
+    position: relative;
+    overflow-x: hidden;
+    transition: all 0.2s ease-out;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+
+.site
+    height: 100%;
+
+a
+    color: #096;
+    text-decoration: none;
+    outline: none;
+
+img
+    max-width: 100%;
+    height: auto;
+
+h1
+    font-size: 1.80em;
+    margin: 0.8em 0 0.4em 0;
+    line-height: 1.2;
+    letter-spacing: -2px;
+
+    @media screen and (min-width: 768px)
+        font-size: 3em;
+        letter-spacing: -4px;
+
+    @media screen and (min-width: 1200px)
+        font-size: 4em;
+        line-height: 1;
+
+p
+    margin: 0 0 1.2em 0;
+    line-height: 1.5;

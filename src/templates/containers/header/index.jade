@@ -1,0 +1,26 @@
+header.header
+    a.menu-toggle.toggle-link
+    h1.site-title.mobile-title ALEKSEY DEVKSH
+    .header__wrap
+        img(
+        src='img/avatar.jpg'
+        )
+        h1.site-title ALEKSEY DEVKSH
+        nav.header__menu
+            mixin list(...items)
+                ul
+                    each item in items
+                        li
+                            a(href=item)&attributes(attributes)= item
+            +list("home", "about me", "resume", "portfolio", "contact")
+        .header__bottom
+            ul.header__social
+                -
+                    var list = ["facebook", "twitter", "linkedin", "instagram"]
+                each item in list
+                    li
+                        a(target="_blank" class=item)
+            .copy-text
+                p © 2016 devksh.com
+
+
